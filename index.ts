@@ -93,7 +93,7 @@ Papa.parse<{ name: string; acronym: string; subject_terms: string }>(
       const settings = forceAtlas2.inferSettings(graph);
       forceAtlas2.assign(graph, { settings, iterations: 600 });
 
-      // 7. Hide the loader from the DOM:
+      // 7. Hide the loader by css from the DOM:
       const loader = document.getElementById("loader") as HTMLElement;
       loader.style.display = "none";
 
